@@ -218,7 +218,7 @@ Navigation Bar
 .navbar li::after {
   content: "|";
   margin: 0.33rem;
-  color: black;
+  color: #ffaeb1;
 }
 
 .navbar li:last-child::after {
@@ -522,7 +522,7 @@ Blurbs
 
 .blurbs h3 {
   margin: 0;
-  color: #ff6600;
+  color: #ffaeb1;
   font-size: 9pt;
   margin-left: 15px;
 }
