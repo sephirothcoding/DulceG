@@ -1,8 +1,15 @@
-
-
 html {
   box-sizing: border-box;
-} 
+}
+
+body {
+  font-family: sans-serif, helvetica;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  background: grey; /* Fundalul este acum gri */
+  color: #ffaeb1; /* Textul este acum de culoare #ffaeb1 */
+}
+
 .contact-box2 {
   background: #0e0e0e;
   border: 5px solid #ffaeb1;
@@ -12,7 +19,7 @@ html {
 
 .contact-box2 h2 {
   background-color: transparent;
-  color: black;
+  color: #ffaeb1; /* Culoarea textului a fost schimbată */
   padding: 0;
   display: none;
 }
@@ -26,7 +33,7 @@ html {
 }
 
 .contact-images p {
-  color: #ffaeb1; 
+  color: #ffaeb1;
   font-weight: bold;
   font-size: 12px;
 }
@@ -35,31 +42,31 @@ html {
   cursor: pointer;
   text-decoration: underline;
 }
-  
 
 /* Stilurile CSS */
-  .contact-box {
-    text-align: center;
-  }
-  .contact-images {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-  }
-  .contact-images li {
-    margin-right: 20px;
-  }
-  .contact-images li:last-child {
-    margin-right: 0;
-  }
-  .contact-images img {
-    border-radius: 50%;
-    cursor: pointer;
-  }
+.contact-box {
+  text-align: center;
+}
 
+.contact-images {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
 
+.contact-images li {
+  margin-right: 20px;
+}
 
+.contact-images li:last-child {
+  margin-right: 0;
+}
+
+.contact-images img {
+  border-radius: 50%;
+  cursor: pointer;
+}
 
 *,
 *:before,
@@ -69,7 +76,8 @@ html {
 
 body {
   font-family: verdana, arial, sans-serif, helvetica;
-  background-color: #e5e5e5;
+  background-color: grey; /* Fundalul este acum gri */
+  color: #ffaeb1; /* Textul este acum de culoare #ffaeb1 */
   font-size: 8pt;
   margin: 0;
 }
@@ -77,19 +85,20 @@ body {
 a {
   font-weight: bold;
   text-decoration: none;
+  color: #ffaeb1; /* Culoarea linkurilor este acum #ffaeb1 */
 }
 
 a:link {
-  color: #003399;
+  color: #ffaeb1; /* Culoarea linkurilor nevizitate */
 }
 
 a:visited {
-  color: #003399;
+  color: #ffaeb1; /* Culoarea linkurilor vizitate */
 }
 
 a:hover {
   text-decoration: underline;
-  color: #cc0000;
+  color: #cc0000; /* Culoarea linkurilor la hover */
 }
 
 h2 {
@@ -104,29 +113,19 @@ p {
   color: #ffaeb1;
 }
 
-/*
-========================================
-Master Container
-========================================
-*/
 .master-container {
   margin: auto;
   width: 800px;
   background-color: white;
 }
 
-/*
-========================================
-Main Header
-========================================
-*/
 .main-header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 151px;
   background-color: rgb(0, 51, 153);
-  color: #ffffff;
+  color: #ffaeb1; /* Culoarea textului în header-ul principal */
 }
 
 .main-header ul {
@@ -134,19 +133,13 @@ Main Header
 }
 
 .main-header a:link {
-  color: #ffffff;
-  font-weight: normal;
+  color: #ffaeb1; /* Culoarea linkurilor în header-ul principal */
 }
 
 .main-header a:visited {
-  color: #ffffff;
+  color: #ffaeb1; /* Culoarea linkurilor vizitate în header-ul principal */
 }
 
-/*
-========================================
-Search Bar
-========================================
-*/
 .search-bar {
   display: grid;
   grid-template-columns: 0.25fr 1fr 0.25fr;
@@ -196,11 +189,6 @@ Search Bar
   justify-self: end;
 }
 
-/*
-========================================
-Navigation Bar
-========================================
-*/
 .navbar {
   display: flex;
   align-items: center;
@@ -218,7 +206,7 @@ Navigation Bar
 .navbar li::after {
   content: "|";
   margin: 0.33rem;
-  color: #ffaeb1;
+  color: #ffaeb1; /* Culoarea separatorului în navbar */
 }
 
 .navbar li:last-child::after {
@@ -226,14 +214,9 @@ Navigation Bar
 }
 
 .navbar a:hover {
-  color: #003399;
+  color: #003399; /* Culoarea linkurilor la hover în navbar */
 }
 
-/*
-========================================
-Page Content Container
-========================================
-*/
 .page-content-container {
   display: grid;
   grid-template-columns: 325px 453px;
@@ -241,11 +224,6 @@ Page Content Container
   grid-template-areas: "sidebar main";
 }
 
-/*
-========================================
-Profile Sidebar Column
-========================================
-*/
 .profile-sidebar {
   grid-area: sidebar;
   margin-left: 27px;
@@ -266,11 +244,6 @@ h1 {
   margin: 0;
 }
 
-/*
-========================================
-Profile Picture Container
-========================================
-*/
 .profile-picture-container {
   display: grid;
   grid-template-columns: 150px 105px;
@@ -317,11 +290,6 @@ Profile Picture Container
   align-self: end;
 }
 
-/*
-========================================
-Contact Box
-========================================
-*/
 .contact-box {
   border: 2px solid rgb(102, 153, 204);
   height: 149px;
@@ -330,8 +298,8 @@ Contact Box
 }
 
 .contact-box h2 {
-  color: white;
-  background-color: rgb(102, 153, 204);
+  color: #ffaeb1; /* Culoarea textului din contact-box */
+  background-color: rgb(102, 153, 204); /* Fundalul h2 */
   height: 17px;
   padding-left: 10px;
 }
@@ -344,11 +312,6 @@ Contact Box
   margin-left: 10px;
 }
 
-/*
-========================================
-MySpace URL
-========================================
-*/
 .myspace-url-box {
   border: 1px solid rgb(102, 153, 204);
   height: 26px;
@@ -370,11 +333,6 @@ MySpace URL
   padding-left: 6px;
 }
 
-/*
-========================================
-Sidebar Table Class
-========================================
-*/
 .sidebar-table {
   border: 2px solid rgb(102, 153, 204);
   display: table;
@@ -384,7 +342,7 @@ Sidebar Table Class
 
 .sidebar-table-h2 {
   background-color: rgb(102, 153, 204);
-  color: white;
+  color: #ffaeb1; /* Culoarea textului din sidebar-table-h2 */
   text-align: left;
   height: 17px;
   padding-left: 15px;
@@ -408,11 +366,6 @@ Sidebar Table Class
   padding: 3px;
 }
 
-/*
-========================================
-Interests
-========================================
-*/
 .interests p {
   margin-top: 0;
 }
@@ -426,20 +379,10 @@ Interests
   margin-bottom: 13px;
 }
 
-/*
-========================================
-Details
-========================================
-*/
 .details table {
   margin-bottom: 22px;
 }
 
-/*
-========================================
-Schools
-========================================
-*/
 .schools .sidebar-table-header {
   width: 228px;
   color: black;
@@ -456,20 +399,10 @@ Schools
   margin-bottom: 2em;
 }
 
-/*
-========================================
-Main Column
-========================================
-*/
 main {
   grid-area: main;
 }
 
-/*
-========================================
-User Network
-========================================
-*/
 .user-network {
   display: flex;
   justify-content: center;
@@ -485,11 +418,6 @@ User Network
   font-size: 12pt;
 }
 
-/*
-========================================
-Blog
-========================================
-*/
 .blog {
   display: grid;
   grid-auto-rows: 29px;
@@ -503,26 +431,17 @@ Blog
   margin-top: 3px;
 }
 
-/*
-========================================
-Blurbs
-========================================
-*/
 .main-section-header {
-  background-color: #ffcc99;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  margin-bottom: 8px;
+  background-color: transparent;
 }
 
 .main-section-h2 {
-  color: #ff6600;
-  margin-left: 20px;
+  color: #ffaeb1; /* Culoarea textului din main-section-h2 */
 }
 
 .blurbs h3 {
   margin: 0;
-  color: #ffaeb1;
+  color: #ffaeb1; /* Culoarea textului din blurbs h3 */
   font-size: 9pt;
   margin-left: 15px;
 }
@@ -540,11 +459,6 @@ Blurbs
   font-weight: bold;
 }
 
-/*
-========================================
-Friend Space
-========================================
-*/
 .friends header {
   margin-bottom: 6px;
 }
@@ -594,11 +508,6 @@ Friend Space
   color: #cc0000;
 }
 
-/*
-========================================
-Comment Wall
-========================================
-*/
 .comment-wall .main-section-header {
   margin-bottom: 3px;
 }
@@ -663,15 +572,10 @@ Comment Wall
   margin-bottom: 5px;
 }
 
-/*
-========================================
-Footer
-========================================
-*/
 footer {
   display: grid;
   grid-template-rows: 16px 39px;
-  background-color: #e5e5e5;
+  background-color: grey; /* Fundalul este acum gri */
   padding-top: 10px;
   height: 65px;
 }
@@ -680,6 +584,7 @@ footer a {
   text-decoration: underline;
   font-weight: normal;
   font-size: 8pt;
+  color: #ffaeb1; /* Culoarea linkurilor în footer */
 }
 
 footer ul {
@@ -694,6 +599,7 @@ footer ul {
 footer li:after {
   content: " | ";
   font-weight: normal;
+  color: #ffaeb1; /* Culoarea separatorului în footer */
 }
 
 #last:after {
@@ -707,17 +613,11 @@ footer small {
   height: 100%;
   font-size: 8pt;
   font-weight: normal;
+  color: #ffaeb1; /* Culoarea textului mic în footer */
 }
 
 /* Custom */
-
 body {
-  background: #0e0e0e;
-  /*background-image: linear-gradient(
-    180deg,
-    transparent 50%,
-    rgba(255, 113, 167, 0.5) 50%
-  );*/
   background-image: url("https://xatimg.com/image/aOxU9XhPhJKs.png");
   background-repeat: no-repeat; /* Previne repetarea imaginii */
   background-size: cover; /* Acoperă întreaga zonă disponibilă */
@@ -725,9 +625,6 @@ body {
   background-attachment: fixed; /* Face ca imaginea să fie fixă, fără a se deplasa cu conținutul */
   background-size: 50%;
   background-attachment: fixed;
-  font-family: sans-serif, helvetica;
-  letter-spacing: 1px;
-  line-height: 1.5;
 }
 
 .master-container {
@@ -806,7 +703,7 @@ footer li:after {
 .contact-box h2,
 .sidebar-table-h2 {
   background-color: transparent;
-  color: black;
+  color: #ffaeb1; /* Culoarea textului în contact-box h2 și sidebar-table-h2 */
   padding: 0;
   display: none;
 }
@@ -822,7 +719,7 @@ footer li:after {
 
 .sidebar-table-header,
 .sidebar-table-data {
-  color: black;
+  color: #ffaeb1; /* Culoarea textului din sidebar-table-header și sidebar-table-data */
   background-color: transparent;
 }
 
@@ -836,7 +733,7 @@ footer li:after {
 
 .blurbs h3 {
   margin: 0;
-  color: black;
+  color: #ffaeb1; /* Culoarea textului din blurbs h3 */
 }
 
 .blurbs p {
@@ -853,7 +750,7 @@ footer li:after {
 }
 
 section a {
-  color: #fff !important;
+  color: #ffaeb1 !important; /* Culoarea linkurilor în secțiune */
   text-decoration: underline;
 }
 
@@ -896,8 +793,7 @@ section a {
 
 .contact-box {
    background: #0e0e0e;
-    top black;
-  border: 5px solid #ffaeb1;
+   border: 5px solid #ffaeb1;
 }
 
 .contact-images p {
@@ -910,4 +806,3 @@ section a {
   cursor: pointer;
   text-decoration: underline;
 }
-
