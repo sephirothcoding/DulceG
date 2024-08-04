@@ -623,8 +623,7 @@ body {
   background-size: cover; /* Acoperă întreaga zonă disponibilă */
   background-position: center center; /* Poziționează imaginea în centrul ecranului */
   background-attachment: fixed; /* Face ca imaginea să fie fixă, fără a se deplasa cu conținutul */
-  background-size: 50%;
-  background-attachment: fixed;
+  
 }
 
 .master-container {
